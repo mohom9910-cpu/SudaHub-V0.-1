@@ -1,0 +1,6 @@
+{
+  "name": "SudaHub - منصة الاشتراكات والخدمات الرقمية",
+  "description": "منصة سودانية متكاملة لتوفير اشتراكات الذكاء الاصطناعي، البرمجيات، وخدمات Starlink، مع بوابات دفع بالجنيه السوداني والدولار ولوحة تحكم شاملة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

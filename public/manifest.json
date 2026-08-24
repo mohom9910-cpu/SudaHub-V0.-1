@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "id": "/?source=pwa",
+  "name": "SudaHub - منصة الاشتراكات والخدمات الرقمية",
+  "short_name": "SudaHub",
+  "description": "منصة سودانية متكاملة لشراء وتفعيل اشتراكات الذكاء الاصطناعي، البرمجيات، وخدمات Starlink في السودان",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#0A0F1D",
+  "theme_color": "#10B981",
+  "orientation": "any",
+  "dir": "rtl",
+  "lang": "ar",
+  "categories": [
+    "shopping",
+    "business",
+    "utilities",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "واجهة منصة SudaHub على الهاتف الذكي"
+    },
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "لوحة خدمات واشتراكات SudaHub على الأجهزة اللوحية والمكتبية"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "تتبع الطلبات",
+      "short_name": "تتبع الطلب",
+      "description": "تتبع حالة طلبك برقم الطلب أو الهاتف",
+      "url": "/?view=track",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "اشتراكات الذكاء الاصطناعي",
+      "short_name": "الذكاء الاصطناعي",
+      "description": "تصفح باقات ChatGPT, Claude, Midjourney",
+      "url": "/?cat=ai",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "خدمات Starlink",
+      "short_name": "Starlink",
+      "description": "سداد وتجديد باقات إنترنت ستارلينك",
+      "url": "/?cat=starlink",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": []
+}
