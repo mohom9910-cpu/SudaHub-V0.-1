@@ -1,4 +1,4 @@
-name: Build SudaHub APK & Web
+name: Build SudaHub Web Dist
 
 on:
   push:
@@ -22,26 +22,8 @@ jobs:
       - name: Build Web Assets (Vite)
         run: npm run build
 
-      - name: Copy Web Build to Android Assets
-        run: |
-          mkdir -p android/app/src/main/assets/public
-          cp -r dist/* android/app/src/main/assets/public/ || cp -r build/* android/app/src/main/assets/public/ || true
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v5
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Grant execute permission for gradlew
-        run: chmod +x android/gradlew
-
-      - name: Build Debug APK with Gradle
-        working-directory: ./android
-        run: ./gradlew assembleDebug
-
-      - name: Upload APK Artifact
+      - name: Upload Web Dist Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: sudahub-android-apks
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          name: sudahub-web-dist
+          path: dist/
