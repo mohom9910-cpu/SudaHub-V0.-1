@@ -1,0 +1,76 @@
+{
+  "background_color": "#25fb6c",
+  "description": "منصة سودانية رائدة لتوفير اشتراكات الذكاء الاصطناعي (ChatGPT Plus, Claude, Midjourney)، البرمجيات، وخدمات Starlink في السودان.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "SudaHub",
+  "orientation": "any",
+  "scope": "//SudaHub-V0.-1/",
+  "short_name": "SudaHub",
+  "start_url": "//SudaHub-V0.-1/",
+  "theme_color": "#14fff9",
+  "icons": [
+    {
+      "src": "https://mohom9910-cpu.github.io/favicon.svg",
+      "type": "image/svg+xml",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://mohom9910-cpu.github.io/favicon-32.png",
+      "type": "image/png",
+      "sizes": "32x32",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 32,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://mohom9910-cpu.github.io/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 192,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": true
+    },
+    {
+      "src": "https://mohom9910-cpu.github.io/apple-touch-icon.png",
+      "sizes": "180x180",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 180,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://mohom9910-cpu.github.io/icon-512.png",
+      "isSquare": false,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "lang": "ar"
+}
