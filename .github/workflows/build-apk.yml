@@ -1,14 +1,14 @@
-name: Build SudaHub Web Dist
+name: Build PWA to APK
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -16,14 +16,14 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install dependencies & Build web
+        run: |
+          npm install
+          npm run build
 
-      - name: Build Web Assets (Vite)
-        run: npm run build
-
-      - name: Upload Web Dist Artifact
-        uses: actions/upload-artifact@v4
+      - name: Generate Trusted Web Activity (APK)
+        uses: cardinalby/export-android-app-action@v1
         with:
-          name: sudahub-web-dist
-          path: dist/
+          web-manifest-url: 'https://mohom9910-cpu.github.io/SudaHub-V0.-1/manifest.json'
+          package-id: 'com.sudahub.app'
+          app-name: 'SudaHub'
